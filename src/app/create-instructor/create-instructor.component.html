@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Management</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Instructor Management</h1>
+        
+        <!-- Add Instructor Form -->
+        <div class="form-container" id="instructor-management">
+            <h2>Add New Instructor</h2>
+            <form id="instructorForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter instructor name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter instructor email" required>
+                </div>
+                <div class="form-group">
+                    <label for="expertise">Expertise:</label>
+                    <input type="text" id="expertise" placeholder="Enter area of expertise" required>
+                </div>
+                <div class="form-group">
+                    <label for="qualification">Qualification:</label>
+                    <input type="text" id="qualification" placeholder="Enter qualification" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience (in years):</label>
+                    <input type="number" id="experience" placeholder="Enter experience" required>
+                </div>
+                <button type="submit">Add Instructor</button>
+            </form>
+        </div>
+
+        <!-- Instructor List Table -->
+        <div class="table-container">
+            <h2>Instructor List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Expertise</th>
+                        <th>Qualification</th>
+                        <th>Experience</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="instructorTableBody">
+                    <!-- Dynamic Instructor Rows Will Appear Here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
